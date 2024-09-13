@@ -123,4 +123,4 @@ $studentAJ = new StudentAJ();
 //menjaankan method untuk menampilkan data student dengan signature AJ
 $studentAJData = $studentAJ->showDataStudent();
 ```
-
+![Halaman index](images/index.png)
