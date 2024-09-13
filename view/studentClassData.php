@@ -1,16 +1,19 @@
 <?php
+//perintah include agar bisa mengakses data dari file berbeda
 include '../layouts/header.php';
 include '../layouts/nav.php';
 include '../library/func.php';
 
+//instansiasi class student classes
 $studentClasses = new StudentClasses();
+//menjaankan method untuk menampilkan data
 $studentClassesData = $studentClasses->showDataStudentClasses();
 
 ?>
 <h1 class="text-center mt-2 mb-3">Student Classes data</h1>
 <div class="d-flex justify-content-center">
     <table border="1" class="table table-striped-columns" style="width: 90%;">
-        <tr>
+        <tr class="table-primary">
             <th>ID</th>
             <th>Name</th>
             <th>Academic Year</th>
@@ -20,6 +23,7 @@ $studentClassesData = $studentClasses->showDataStudentClasses();
             <th>Deleted at</th>
         </tr>
         <?php
+        //looping untuk menampilkan data satu per satu
         foreach ($studentClassesData as $key => $value) {
         ?>
             <tr>

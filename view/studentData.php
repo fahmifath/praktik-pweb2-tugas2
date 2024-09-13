@@ -1,16 +1,19 @@
 <?php
+//perintah include agar bisa mengakses data dari file berbeda
 include '../layouts/header.php';
 include '../layouts/nav.php';
 include '../library/func.php';
 
+//instansiasi class students
 $students = new Students();
+//menjaankan method untuk menampilkan data, penerapan prinsip polymorphism
 $studentsData = $students->showDataStudent();
 
 ?>
 <h1 class="text-center mt-2 mb-3">Students data</h1>
 <div class="d-flex justify-content-center">
     <table border="1" class="table table-striped-columns" style="width: 90%;">
-        <tr>
+        <tr class="table-primary">
             <th>ID</th>
             <th>NIM</th>
             <th>Name</th>
@@ -23,6 +26,7 @@ $studentsData = $students->showDataStudent();
             <th>Deleted at</th>
         </tr>
         <?php
+        //looping untuk menampilkan data satu per satu
         foreach ($studentsData as $key => $value) {
         ?>
             <tr>

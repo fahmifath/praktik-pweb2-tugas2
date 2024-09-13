@@ -1,16 +1,19 @@
 <?php
+//perintah include agar bisa mengakses data dari file berbeda
 include '../layouts/header.php';
 include '../layouts/nav.php';
 include '../library/func.php';
 
+//instansiasi class student dengan signature AJ
 $studentAJ = new StudentAJ();
+//menjaankan method untuk menampilkan data, penerapan prinsip polymorphism
 $studentAJData = $studentAJ->showDataStudent();
 
 ?>
 <h1 class="text-center mt-2 mb-3">Student With AJ Signatures data</h1>
 <div class="d-flex justify-content-center">
     <table border="1" class="table table-striped-columns" style="width: 90%;">
-        <tr>
+        <tr class="table-primary">
             <th>ID</th>
             <th>NIM</th>
             <th>Name</th>
@@ -23,6 +26,7 @@ $studentAJData = $studentAJ->showDataStudent();
             <th>Deleted at</th>
         </tr>
         <?php
+        //looping untuk menampilkan data satu per satu
         foreach ($studentAJData as $key => $value) {
         ?>
             <tr>
