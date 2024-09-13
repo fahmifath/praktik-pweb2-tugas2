@@ -1,5 +1,4 @@
-# Praktikum Pemrograman Web 2
-## Tentang saya
+# Praktikum Pemrograman Web 2 Tugas 2
 Nama : Fahmi Fathurrohman
 
 Kelas: TI 2B
@@ -13,3 +12,8 @@ berisi file file untuk memperbagus tampilan, file header.php dan footer.php untu
 berisi file func.php yang isinya class database untuk connect ke mySQL dan ada beberapa class yang merupakan turunan dari kelas database yang berisi method untuk menampilkan data.
 ### 3. Folder View
 berisi file untuk menginstansiasikan class class yg ada di folder library dan menjalankan method untuk menampikan data.
+## Penjelasan Setiap Task pada Tugas
+Task 1: Create an OOP-based View, by retrieving data from the MySQL database
+```sh
+
+```
